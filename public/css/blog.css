@@ -1,0 +1,167 @@
+*{padding: 0%;margin: 0%;box-sizing: border-box;}
+
+body {
+}
+#pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10%;
+}
+#pagination a{
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: #000;
+    border-radius: 50%;
+    margin: 10px;
+}
+#pagination a.active{
+    background-color: #000;
+    color: #fff;
+}
+#pagination a:focus {
+    outline: none;
+    background: #000;
+    color: #fff;
+}
+#articles{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 5%;
+}
+.article-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    margin: 30px;
+}
+.article-item h2{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.article-item a{
+    text-decoration: none;
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    border: 1px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.article{
+    width: 80%;
+    text-align: justify;
+    margin: 20px;
+}
+.article .describeArticle{
+    padding: 20px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.article small{
+    display: block;
+    text-transform: uppercase;
+    font-style: italic;
+    position: relative;
+    float: right;
+    font-weight: bold;
+}
+/* login form */
+.form-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    align-items: stretch;
+    justify-content: center;
+    overflow: hidden;
+    min-height: 100vh;
+    padding: 0% 10%;
+}
+
+.form-container .form,.form-container .form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container .form {
+    background: #ffffff;
+    backdrop-filter: blur(10px);
+    padding: 10% 0;
+}
+
+.form-container .form img {
+    width: 190px;
+}
+.form-container form#login{
+    color: #454545;
+    font-family: system-ui;
+    letter-spacing: 1px;
+    text-align: left;
+    background: #ffffff0f;
+    /* box-shadow: 0px 0px 30px #00000026; */
+    background: aliceblue;
+}
+
+form#login h3 {
+    font-size: 2.5em;
+}
+
+.form-container .form form {
+    align-items: flex-start;
+    width: 100%;
+    padding: 4% 12%;
+    justify-content: space-evenly;
+    height: 100%;
+}
+.form-container form#login label{
+    font-size: 18px;
+    padding: 16px 0;
+    text-align: left;
+    width: 100%;
+}
+.form-container form#login input{
+    padding: 16px 0;
+    margin: 0px 0px 10px;
+    width: 100%;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background: #ffffff0a;
+    border: none;
+    transition: all .3s linear;
+    border-bottom: 2px solid #4147cc38;
+}
+
+.form-container form#login input:focus {
+    outline: 0;
+    border-bottom: 2px solid #4147cc;
+}
+
+.form-container form#login input[type="submit"] {
+    margin-top: 10px;
+    width: fit-content;
+    float: right;
+    padding: 20px 20px;
+    border: none;
+    background: #007afa;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.form-container form#login input[type="submit"]:hover {
+    background: #000000;
+}
+.form-container .img{}
+.form-container .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+/* login form */
